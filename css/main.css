@@ -1,0 +1,67 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+</style>
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+	width: 200px;
+  border: 1px solid #f1f1f1;
+  background: rgb(132, 132, 132);
+	font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper ul {
+	margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+.wrapper li {
+	display: flex;
+}
+
+.wrapper a {
+  text-decoration: none;
+  color:  white;
+  font-size: 10px;
+  display: flex;
+  padding: 10px;
+  width: 100%;
+  align-items: center;
+}
+
+.wrapper a:before {
+  width: 50px;
+  height: 50px;
+  margin-right: 20px;
+}
+
+.wrapper .edit a:before {content: "";
+	background: url('../img/edit.png');
+	background-size: 50px 50px;}
+.wrapper .favorites a:before {content: "";
+	background: url('../img/favorites.png');
+	background-size: 50px 50px;}
+.wrapper .history a:before {content: "";
+	background: url('../img/history.png');
+	background-size: 50px 50px;}
+.wrapper .security a:before {content: "";
+	background: url('../img/security.png');
+	background-size: 50px 50px;}
+.wrapper .setting a:before {content: "";
+	background: url('../img/settings.png');
+	background-size: 50px 50px;}
+
+
+.wrapper a:hover {
+  background: #424242;
+  color: white;
+}
